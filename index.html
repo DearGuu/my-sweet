@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .love{width: 500px;
+        height: 500px;
+        margin: 10% 10% ;
+        background: pink;
+        border-radius: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: 3s;
+    }
+    .love:hover{position: absolute;
+        scale: 1.4;
+        background-image: url(love.jpeg);
+        background-size: cover;
+        transition: 5s;
+    }
+    .love:hover .text{display: none;
+    }
+    .shown{
+        display: none;
+    }
+    .love:hover .shown{display: block;
+                        transition: 2s;
+                        position: absolute;
+                        bottom: 100px;
+                        color: white;}
+</style>
+<body>
+    <div class="love"> 
+        <div class="text">Point at me =)</div>
+        <div class="shown"> I can't wait until we meet again, my sweet boy</div>
+    </div>
+</body>
+</html>
